@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.driver_class">oracle.jdbc.datasource.OracleDataSource</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1522:xe</property>
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">tiger</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="com.model.Employee"/>
+    </session-factory>
+</hibernate-configuration>
